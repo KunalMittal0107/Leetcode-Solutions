@@ -25,11 +25,11 @@ public:
       }
       int i=0,j=0,k=0;
         while(true){
-            if(i==S1.size() || j==S2.size() || k==S3.size()){
-                return 0;
-            }
             if(sum1==sum2 && sum2==sum3){
                 return sum1;
+            }
+            if(i==S1.size() || j==S2.size() || k==S3.size()){
+                return 0;
             }
             if(sum1>=sum2 && sum1>=sum3){
                 sum1-=S1[i++];
