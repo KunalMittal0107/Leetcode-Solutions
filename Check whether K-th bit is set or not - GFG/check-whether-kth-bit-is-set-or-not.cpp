@@ -17,7 +17,7 @@ class Solution
     {
         // Your code here
         // It can be a one liner logic!! Think of it!!
-        while(k--){
+        for(int i=0;i<k;i++){
             n>>=1;
         }
         if(n&1){
